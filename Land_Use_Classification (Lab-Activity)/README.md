@@ -80,4 +80,12 @@ Important Parameters:
 6) `ImageDataGenerator` is used in order to increase the amount of data by adding slightly modified version of the images.
 7) A `Callbacks` set is defined with parameters such as `Earlystopping`, `reduce_learning_rate`, `Modelcheckpoint` and `Tensorboard`.
 
-
+## Test results
+`model.evaluated` is used to verify the accuracy of the model.
+```python
+eval_out = model.evaluate(x=test_dataset,
+                          steps=len(test_gen),
+                          verbose=0)
+eval_out
+```
+result: [0.06702920794487, 0.9809523820877075]
