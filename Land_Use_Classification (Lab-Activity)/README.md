@@ -5,7 +5,7 @@ First Activity of Artificial Neural Networks and Deep Learning [course](http://c
 - [Politecnico di Milano](https://www.polimi.it/)
 
 ________________________
- Group members:
+ Group member:
  -
 > - Saeid Rezaei
 
