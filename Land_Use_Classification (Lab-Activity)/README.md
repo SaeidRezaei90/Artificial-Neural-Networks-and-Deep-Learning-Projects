@@ -56,6 +56,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.applications.VGG16 import vgg16
 import time
 import matplotlib.pyplot as plt
 from google.colab import drive
@@ -65,6 +66,8 @@ We implement a transfer learning approach using a pre-trained model `VGG16` that
 Parameters:
 - Model = VGG16
 - Batch Size = 32
+- Learning rate = 1e-4
+- Number of epoch = 30
 - Training/Validation split = 80/20%
 - Image Augmentation + normalisation (ImageNet)
 
@@ -72,8 +75,9 @@ Parameters:
 1) After studying the train set, it was observed that the dataset consisted images of 256x256 pixels. All the image in the dataset contains only 1 object (class) and so there was no image segmentation.
 2) The train dataset is divided into 3 subcategory, training, validation and test, which each one contains 21 subfolders corresponding to 21 classes.
 3) We use a pre-trained transfer learning technique for training and validation on the model. The [`VGG16`](https://keras.io/api/applications/vgg/#vgg16-function) model, was used as the base model. The weights for the `VGG16` model, trained on the `imagenet` dataset were loaded on the model.
-4) We set the `include_top` parameter of `VGG16` to False, it means that all fully connected layers were removed from the VGG16 model and a new fully connected network was defined with a few layers. 
-5) `ImageDataGenerator` is used in order to increase the amount of data by adding slightly modified version of the images.
-6) A `Callbacks` set is defined with parameters such as `Earlystopping`, `Modelcheckpoint` and `Tensorboard`.
+4) We set the `include_top` parameter of `VGG16` to False, it means that all fully connected layers were removed from the VGG16 model and a new fully connected network was defined with a few layers.
+5) We also used a `finetuning` approach to tune the weights.
+6) `ImageDataGenerator` is used in order to increase the amount of data by adding slightly modified version of the images.
+7) A `Callbacks` set is defined with parameters such as `Earlystopping`, `Modelcheckpoint` and `Tensorboard`.
 
 
