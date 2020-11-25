@@ -14,9 +14,7 @@ ________________________
 # Land Use classification using Convolutional Neural Network
 
 ## Description
-The Purpose of this Project is to classify land use image using [*Convolutional Neural Network*](https://en.wikipedia.org/wiki/Convolutional_neural_network). The dataset used for this project is the [UC Merced dataset](https://drive.google.com/file/d/18mva7AbCzf-rHpW5SEzpVDtoXAcVD5Mf/view?usp=sharing), which consists of 21 land use classes. The structure of the data set is as following:
-
- 
+The Purpose of this Project is to classify land use image using [*Convolutional Neural Network*](https://cs231n.github.io/convolutional-networks/). The dataset used for this project is the [UC Merced dataset](https://drive.google.com/file/d/18mva7AbCzf-rHpW5SEzpVDtoXAcVD5Mf/view?usp=sharing), which consists of 21 land use classes. The structure of the data set is as following:
 
     - UCMerced_LandUse/
         - training/
@@ -37,10 +35,36 @@ The Purpose of this Project is to classify land use image using [*Convolutional 
             - …
             - parkinglot/ 
                 - img1, img2, ... , imgN
+                
+ To read the images, we first upload the images in the Google Drive and then mount to the Drive and import the image file to the project, like following:
+ ```python
+from google.colab import drive
+drive.mount('/content/drive')
+!unzip '/content/drive/My Drive/UCMerced_LandUse.zip'
+```
 
-This project is developed by using [Python3.6](https://www.python.org/downloads/release/python-360/), [Tensorflow](http://tensorflow.org) as a backend and [Keras](http://keras.io/) as high level deep learning library.
+This project is developed by using Python3.6, [Tensorflow](http://tensorflow.org) as a backend and [Keras](http://keras.io/) as powerful level deep learning library.
 
+## Libraries used in the project
+```python
 
+import numpy as np
+import os
+import keras
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.layers import Conv2D, MaxPooling2D
+import time
+import matplotlib.pyplot as plt
+from google.colab import drive
+```
+## Model Training 
+We implement a transfer learning approach using a pre-trained model `VGG16` that has been pre-trained on ImageNet.
+Parameters:
+- Model = VGG16
+- Batch Size = 32
+- Training/Validation split = 80/20%
+- Image Augmentation + normalisation (ImageNet)
 
 Approaches
 
