@@ -51,9 +51,11 @@ This project is developed by using Python3.6, [Tensorflow](http://tensorflow.org
 import numpy as np
 import os
 import keras
+import tensorflow as tf
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Conv2D, MaxPooling2D
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import time
 import matplotlib.pyplot as plt
 from google.colab import drive
@@ -66,8 +68,12 @@ Parameters:
 - Training/Validation split = 80/20%
 - Image Augmentation + normalisation (ImageNet)
 
-Approaches
+## Approache analysis
+1) After studying the train set, it was observed that the dataset consisted images of 256x256 pixels. All the image in the dataset contains only 1 object (class) and so there was no image segmentation.
+2) The train dataset is divided into 3 subcategory, training, validation and test, which each one contains 21 subfolders corresponding to 21 classes.
+3) We use a pre-trained transfer learning technique for training and validation on the model. The [VGG16](https://keras.io/api/applications/vgg/#vgg16-function) model, was used as the base model. The weights for the VGG16 model, trained on the `imagenet` dataset were loaded on the model.
+4) We set the `include_top` parameter of VGG16 to False, it means that all fully connected layers were removed from the VGG16 model and a new fully connected network was defined with a few layers. 
+5) `ImageDataGenerator` is used in order to increase the amount of data by adding slightly modified version of the images.
+6) A Callbacks set is defined with parameters such as Earlystopping, Modelcheckpoint and Tensorboard.
 
-### This project is related during the Artificial Neural Networks and Deep Learning [course](http://chrome.ws.dei.polimi.it/index.php?title=Artificial_Neural_Networks_and_Deep_Learning).
-The goal of this project is to find a model that assign the corresponding class to the given images. There are 21 different classes. We will do this with the Convolutional Neural Network.
-The UC Merced Land Use Dataset is used as the dataset in this project. you can download the data set [here](https://drive.google.com/file/d/18mva7AbCzf-rHpW5SEzpVDtoXAcVD5Mf/view?usp=sharing)
+
