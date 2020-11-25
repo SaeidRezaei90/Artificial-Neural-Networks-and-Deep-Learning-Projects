@@ -16,15 +16,7 @@ ________________________
 ## Description
 The Purpose of this Project is to classify land use image using [*Convolutional Neural Network*](https://en.wikipedia.org/wiki/Convolutional_neural_network). The dataset used for this project is the [UC Merced dataset](https://drive.google.com/file/d/18mva7AbCzf-rHpW5SEzpVDtoXAcVD5Mf/view?usp=sharing), which consists of 21 land use classes. The structure of the data set is as following:
 
-  <Route name="App">
-    <Route name="Admin">
-      <Route name="Users"/>
-      <Route name="Reports"/>
-    </Route>
-    <Route name="Course">
-      <Route name="Assignments"/>
-    </Route>
-  </Route>
+ 
 
     - UCMerced_LandUse/
         - training/
