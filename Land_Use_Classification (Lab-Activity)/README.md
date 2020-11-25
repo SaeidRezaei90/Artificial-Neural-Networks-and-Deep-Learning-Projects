@@ -36,7 +36,7 @@ The Purpose of this Project is to classify land use image using [*Convolutional 
             - parkinglot/ 
                 - img1, img2, ... , imgN
                 
- To read the images, we first upload the images in the Google Drive and then mount to the Drive and import the image file to the project, like following:
+ To read the images, we first upload the zipped image file in the Google Drive and then mount to the Drive and import the image file to the project, like following:
  ```python
 from google.colab import drive
 drive.mount('/content/drive')
