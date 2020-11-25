@@ -81,7 +81,7 @@ Important Parameters:
 7) A `Callbacks` set is defined with parameters such as `Earlystopping`, `reduce_learning_rate`, `Modelcheckpoint` and `Tensorboard`.
 
 ## Test results
-`model.evaluated` is used to verify the accuracy of the model.
+`model.evaluate` is used to verify the accuracy of the model.
 ```python
 eval_out = model.evaluate(x=test_dataset,
                           steps=len(test_gen),
