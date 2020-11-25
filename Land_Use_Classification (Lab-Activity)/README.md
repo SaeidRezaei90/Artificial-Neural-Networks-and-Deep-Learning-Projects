@@ -88,4 +88,4 @@ eval_out = model.evaluate(x=test_dataset,
                           verbose=0)
 eval_out
 ```
-result: [0.06702920794487, 0.9809523820877075]
+test loss, test accuracy: [0.06702920794487, 0.9809523820877075]
