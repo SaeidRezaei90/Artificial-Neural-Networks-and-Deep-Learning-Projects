@@ -15,7 +15,25 @@ ________________________
 
 ## Description
 The Purpose of this Project is to classify land use image using [*Convolutional Neural Network*](https://en.wikipedia.org/wiki/Convolutional_neural_network). The dataset used for this project is the [UC Merced dataset](https://drive.google.com/file/d/18mva7AbCzf-rHpW5SEzpVDtoXAcVD5Mf/view?usp=sharing), which consists of 21 land use classes. The structure of the data set is as following:
-
+    - UCMerced_LandUse/
+        - training/
+            - agricultural/
+                - img1, img2, …, imgN
+            - …
+            - parkinglot/ 
+                - img1, img2, ... , imgN
+        - validation/
+            - agricultural/
+                - img1, img2, …, imgN
+            - …
+            - parkinglot/ 
+                - img1, img2, ... , imgN
+        - test/
+            - agricultural/
+                - img1, img2, …, imgN
+            - …
+            - parkinglot/ 
+                - img1, img2, ... , imgN
 
 This project is developed by using [Python3.6](https://www.python.org/downloads/release/python-360/), [Tensorflow](http://tensorflow.org) as a backend and [Keras](http://keras.io/) as high level deep learning library.
 
