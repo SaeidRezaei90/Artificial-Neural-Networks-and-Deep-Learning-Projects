@@ -16,6 +16,7 @@ ________________________
 ## Description
 The Purpose of this Project is to classify land use image using [*Convolutional Neural Network*](https://cs231n.github.io/convolutional-networks/). The dataset used for this project is the [UC Merced dataset](https://drive.google.com/file/d/18mva7AbCzf-rHpW5SEzpVDtoXAcVD5Mf/view?usp=sharing), which consists of 21 land use classes. The structure of the data set is as following:
 
+```
     - UCMerced_LandUse/
         - training/
             - agricultural/
@@ -35,6 +36,7 @@ The Purpose of this Project is to classify land use image using [*Convolutional 
             - …
             - parkinglot/ 
                 - img1, img2, ... , imgN
+ ```
                 
  To read the images, we first upload the zipped image file in the Google Drive and then mount to the Drive and import the image file to the project, like following:
  ```python
