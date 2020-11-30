@@ -37,17 +37,17 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 
 ## Data Description
 ### Dataset Details
-```
-Image size: variable
-Color space: RGB/Grayscale (read as 'rgb' in ImageDataGenerator.flow_from_directory ('color_mode' attribute) or use PIL.Image.open('imgname.jpg').convert('RGB'))
-File Format: JPG
+
+* Image size: variable
+* Color space: RGB/Grayscale (read as 'rgb' in ImageDataGenerator.flow_from_directory ('color_mode' attribute) or use PIL.Image.open('imgname.jpg').convert('RGB'))
+* File Format: JPG
 Number of classes: 3
 Classes:
 0: "NO PERSON in the image is wearing a mask"
 1: "ALL THE PEOPLE in the image are wearing a mask"
 2: "SOMEONE in the image is not wearing a mask"
 
-```
+
 
 
 
