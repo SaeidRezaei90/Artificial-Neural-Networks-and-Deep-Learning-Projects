@@ -23,3 +23,5 @@ In this project, we are required to classify images depicting groups of people b
   <img src="Images/10378.jpg" width=500 /> 
   <img src="Images/10003.jpg" width=500 />
 </p>
+
+Thus, the classification is performed on 3 different classes. Being a classification problem, given an image, the goal is to predict the correct class label. The dataset details can be found at [this link](https://drive.google.com/file/d/1yNtUs8cSyqo_WGGEWdIdCZB7SL4ausdD/view?usp=sharing) 
