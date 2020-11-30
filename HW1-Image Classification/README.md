@@ -34,7 +34,7 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 - json/
        - {Image_Name:Label}
 
-- UCMerced_LandUse/
+    - UCMerced_LandUse/
         - training/
             - agricultural/
                 - img1, img2, …, imgN
@@ -47,6 +47,13 @@ Thus, the classification is performed on 3 different classes. Being a classifica
             - …
             - parkinglot/ 
                 - img1, img2, ... , imgN
+        - test/
+            - agricultural/
+                - img1, img2, …, imgN
+            - …
+            - parkinglot/ 
+                - img1, img2, ... , imgN
+     
 
 
 
