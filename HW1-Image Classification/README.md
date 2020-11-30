@@ -18,8 +18,14 @@ ________________________
 
 ## Problem description
 In this project, we are required to classify images depicting groups of people based on the number of masked people. In the specific, the solution must discriminate between images depending on the following cases: 1) All the people in the image are wearing a mask, 2) No person in the image is wearing a mask, 3) Someone in the image is not wearing a mask. In the following 3 examples of image from the training belonging to the three cases.
+ <p float="left">
+  <img src="Images/10362.jpg" width="500" height="400"/>
+  <img src="Images/10378.jpg" width=500 /> 
+  <img src="Images/10003.jpg" width=500 />
+</p>
+ 
  <div style="float:center">
- <img  src="Images/10362.jpg" width="400" height="400">
+ <img  src="Images/10362.jpg" width="500" height="400">
   </div>
   
    <div style="float:center">
