@@ -23,7 +23,7 @@ In this project, we are required to classify images depicting groups of people b
   </div>
   
    <div style="float:center">
- <img  src="Images/10039.jpg" width=500>
+ <img  src="Images/10378.jpg" width=500>
   </div>
   
    <div style="float:center">
