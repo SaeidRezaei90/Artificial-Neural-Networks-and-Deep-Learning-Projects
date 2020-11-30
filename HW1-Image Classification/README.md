@@ -27,7 +27,7 @@ In this project, we are required to classify images depicting groups of people b
 Thus, the classification is performed on 3 different classes. Being a classification problem, given an image, the goal is to predict the correct class label. The dataset details can be found at [this link](https://drive.google.com/file/d/1yNtUs8cSyqo_WGGEWdIdCZB7SL4ausdD/view?usp=sharing). The zipped file contains 2 folders containing training and test images and a josn file. The structure of the zipped file is as following: 
 
 * artificial-neural-networks-and-deep-learning-2020/
-var routes = (
+
   <Route name="App">
     <Route name="Admin">
       <Route name="Users"/>
@@ -37,7 +37,7 @@ var routes = (
       <Route name="Assignments"/>
     </Route>
   </Route>
-);
+
 - training/
       - img1, img2, ... , imgN
 - test/
