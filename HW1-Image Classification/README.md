@@ -26,7 +26,6 @@ In this project, we are required to classify images depicting groups of people b
 
 Thus, the classification is performed on 3 different classes. Being a classification problem, given an image, the goal is to predict the correct class label. The dataset details can be found at [this link](https://drive.google.com/file/d/1yNtUs8cSyqo_WGGEWdIdCZB7SL4ausdD/view?usp=sharing). The zipped file contains 2 folders containing training and test images and a josn file. The structure of the zipped file is as following: 
 
-* artificial-neural-networks-and-deep-learning-2020/
 ```
 - training/
       - img1, img2, ... , imgN
@@ -36,7 +35,16 @@ Thus, the classification is performed on 3 different classes. Being a classifica
        - {Image_Name:Label}
 ```
 
-     
+## Data Description
+### Dataset Details
+Image size: variable
+Color space: RGB/Grayscale (read as 'rgb' in ImageDataGenerator.flow_from_directory ('color_mode' attribute) or use PIL.Image.open('imgname.jpg').convert('RGB'))
+File Format: JPG
+Number of classes: 3
+Classes:
+0: "NO PERSON in the image is wearing a mask"
+1: "ALL THE PEOPLE in the image are wearing a mask"
+2: "SOMEONE in the image is not wearing a mask"
 
 
 
