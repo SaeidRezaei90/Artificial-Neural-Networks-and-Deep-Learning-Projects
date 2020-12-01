@@ -90,7 +90,7 @@ One solution for that is parameter tuning. You can see the example here that the
 ### CNN ARCHITECTURE:
 The simple model is as follows:
  <p float="left">
-  <img src="Images/cnn1.png" width="650" />
+  <img src="Images/cnn1.png" width="600" />
 </p>
  This model gives us a 0.67 accuracy on validation set which is not acceptable. So we use Hyperparameter Tuning in order to improve accuracy. 
  
