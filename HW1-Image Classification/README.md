@@ -54,7 +54,7 @@ Two folders:
    
 Training images per class:
 
-  - 0 : 1900
+  #^ 0 : 1900
 
 1 : 1897
 
