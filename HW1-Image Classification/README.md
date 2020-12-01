@@ -47,7 +47,20 @@ Thus, the classification is performed on 3 different classes. Being a classifica
    *  1: "ALL THE PEOPLE in the image are wearing a mask"
    *  2: "SOMEONE in the image is not wearing a mask"
 
+### Dataset Structure
+Two folders:
+* training: 5614 images
+* test: 450 images
+Training images per class:
 
+0 : 1900
+
+1 : 1897
+
+2 : 1817
+
+Ground Truth:
+Labels for images are provided in the *train_gt.json" file.
 
 
 
