@@ -94,7 +94,7 @@ The simple model is as follows:
 </p>
  This model gives us a 0.67 accuracy on validation set which is not good. So we use Hyperparameter Tuning in order to improve accuracy. 
  
-We can tune the hyperparameters using a grid of parameters. This was discussed before we put a section for it just to stress on the importance of this method on choosing the best_model. You can check [this File](Source-code/HyperparamterTuning.ipynb) for that. 
+We can tune the hyperparameters using a grid of parameters. This was discussed before we put a section for it just to stress on the importance of this method on choosing the best_model. You can check [this File](Source-Code/HyperparamterTuning.ipynb) for that. 
 
 
 
