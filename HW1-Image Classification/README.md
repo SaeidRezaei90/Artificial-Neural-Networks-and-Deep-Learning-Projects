@@ -15,8 +15,9 @@ ________________________
 ________________________
 
 # Image Classification
-
+________________________
 ## Problem description
+________________________
 In this project, we are required to classify images depicting groups of people based on the number of masked people. In the specific, the solution must discriminate between images depending on the following cases: 1) All the people in the image are wearing a mask, 2) No person in the image is wearing a mask, 3) Someone in the image is not wearing a mask. In the following 3 examples of image from the training belonging to the three cases.
  <p float="left">
   <img src="Images/10362.jpg" width="500" />
@@ -36,6 +37,7 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 ```
 
 ## Data Description
+________________________
 ### Dataset Details
 
 * Image size: variable
@@ -65,7 +67,7 @@ Training images per class:
 
 train_gt.json: Labels for images are provided in the *train_gt.json" file.
 
-
+________________________
 
 
 
