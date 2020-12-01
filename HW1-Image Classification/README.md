@@ -27,11 +27,11 @@ In this project, we are required to classify images depicting groups of people b
 Thus, the classification is performed on 3 different classes. Being a classification problem, given an image, the goal is to predict the correct class label. The dataset details can be found at [this link](https://drive.google.com/file/d/1yNtUs8cSyqo_WGGEWdIdCZB7SL4ausdD/view?usp=sharing). The zipped file contains 2 folders containing training and test images and a josn file. The structure of the zipped file is as following: 
 
 ```
-- training/
+- training folder/
       - img1, img2, ... , imgN
-- test/
+- test folder/
        - img1, img2, ... , imgN
-- json/
+- json file/
        - {Image_Name:Label}
 ```
 
@@ -49,8 +49,8 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 
 ### Dataset Structure
 Two folders:
-* training: 5614 images
-* test: 450 images
+   * training: 5614 images
+   * test: 450 images
 Training images per class:
 
 0 : 1900
@@ -59,7 +59,7 @@ Training images per class:
 
 2 : 1817
 
-Ground Truth:
+train_gt.json: 
 Labels for images are provided in the *train_gt.json" file.
 
 
