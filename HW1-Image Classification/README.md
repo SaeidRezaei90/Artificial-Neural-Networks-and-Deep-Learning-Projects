@@ -51,9 +51,10 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 Two folders:
    * training: 5614 images
    * test: 450 images
+   
 Training images per class:
 
-0 : 1900
+   0 : 1900
 
 1 : 1897
 
