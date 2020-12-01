@@ -54,15 +54,13 @@ Two folders:
    
 Training images per class:
 
-  #^ 0 : 1900
+    0 : 1900
 
-1 : 1897
+    1 : 1897
 
-2 : 1817
+    2 : 1817
 
-train_gt.json: 
-
-Labels for images are provided in the *train_gt.json" file.
+train_gt.json: Labels for images are provided in the *train_gt.json" file.
 
 
 
