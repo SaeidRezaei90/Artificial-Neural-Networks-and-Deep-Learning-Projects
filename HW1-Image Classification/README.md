@@ -9,9 +9,9 @@ ________________________
 ________________________
  Group members:
  -
-> - Saeid Rezaei
-> - Abdolvakil Fazli
-> - Tina Emami
+ - Saeid Rezaei
+ - Abdolvakil Fazli
+ - Tina Emami
 
 ________________________
 ## Problem description
