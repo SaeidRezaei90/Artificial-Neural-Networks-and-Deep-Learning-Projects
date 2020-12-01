@@ -43,8 +43,11 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 * File Format: JPG
 * Number of classes: 3
 * Classes:
+
  &nbsp; &nbsp; &nbsp; 0: "NO PERSON in the image is wearing a mask"
+ 
   &nbsp; &nbsp; &nbsp; 1: "ALL THE PEOPLE in the image are wearing a mask"
+  
  &nbsp; &nbsp; &nbsp; 2: "SOMEONE in the image is not wearing a mask"
 
 ### Dataset Structure
@@ -56,9 +59,9 @@ Training images per class:
 
 &nbsp; &nbsp; &nbsp; 0 : 1900
 
- &nbsp; &nbsp; &nbsp;1 : 1897
+&nbsp; &nbsp; &nbsp; 1 : 1897
  
- &nbsp; &nbsp; &nbsp; 2 : 1817
+&nbsp; &nbsp; &nbsp; 2 : 1817
 
 train_gt.json: Labels for images are provided in the *train_gt.json" file.
 
