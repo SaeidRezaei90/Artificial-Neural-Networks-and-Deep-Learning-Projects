@@ -15,7 +15,7 @@ ________________________
 
 ________________________
 ## Problem description
-________________________
+
 In this project, we are required to classify images depicting groups of people based on the number of masked people. In the specific, the solution must discriminate between images depending on the following cases: 1) All the people in the image are wearing a mask, 2) No person in the image is wearing a mask, 3) Someone in the image is not wearing a mask. In the following 3 examples of image from the training belonging to the three cases.
  <p float="left">
   <img src="Images/10362.jpg" width="500" />
@@ -33,9 +33,9 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 - json file/
        - {Image_Name:Label}
 ```
-
-## Data Description
 ________________________
+## Data Description
+
 ### Dataset Details
 
 * Image size: variable
@@ -68,9 +68,9 @@ train_gt.json: Labels for images are provided in the *train_gt.json" file.
 ________________________
 
 ## DATA PREPARATION:
-________________________
+
 In this part we should make sure that the training, validation, and the test dataset are set-up in a manner that is usable for the task as well as boosting the overall performance of the deep learning model. 
-We loaded all data in as a Pandas data-frame and thanks to the data_gen.flow_from_dataframe() of Keras we were easily able to make the desired data generator which links the json file to the corresponding folder. 
+We loaded all data in as a Pandas data-frame and thanks to the *data_gen.flow_from_dataframe() of Keras we were easily able to make the desired data generator which links the json file to the corresponding folder. 
 Some Important points:
 •	Input data should be augmented using ImageDataGenerator. By doing this we have more training version of train_data making our prediction more robust to the new test data.
 •	 Validation and test data are not augmented.
