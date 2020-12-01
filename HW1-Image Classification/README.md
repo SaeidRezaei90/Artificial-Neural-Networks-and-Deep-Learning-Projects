@@ -7,7 +7,7 @@
 - [Politecnico di Milano](https://www.polimi.it/)
 
 ________________________
- Group member:
+ Group members:
  -
 > - Saeid Rezaei
 > - Abdolvakil Fazli
@@ -80,12 +80,16 @@ Some Important points:
 
 ________________________
 
-## ARCHITECTURE
+## ARCHITECTURES
 
 The simplest way to tackle this task is to use the CNN and simply by playing with parameters like Learning_Rate, Depth of each layer, number of units, padding, and strides, etc. 
 This seems comfortable at first, but it become very overwhelming and tricky as the degree of freedom becomes a lot.
 
 One solution for that is parameter tuning. You can see the example here that the hyperparameter tuner we can select the best model on a gird of possible values for parameters using random search.
 
-
+### CNN ARCHITECTURE:
+The simple model is as follows:
+ <p float="left">
+  <img src="Images/cnn1.png" width="500" />
+</p>
 
