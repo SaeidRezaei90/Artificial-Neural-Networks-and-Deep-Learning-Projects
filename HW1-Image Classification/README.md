@@ -1,5 +1,5 @@
 
-[Artificial Neural Networks and Deep Learning course](http://chrome.ws.dei.polimi.it/index.php?title=Artificial_Neural_Networks_and_Deep_Learning).
+# Image Classification project, [Artificial Neural Networks and Deep Learning course](http://chrome.ws.dei.polimi.it/index.php?title=Artificial_Neural_Networks_and_Deep_Learning).
 =
 - Academic year 2020-2021
 - 1st semester of 2st year
@@ -12,9 +12,6 @@ ________________________
 > - Abdolvakil Fazli
 > - Tina Emami
 
-________________________
-
-# Image Classification
 ________________________
 ## Problem description
 ________________________
