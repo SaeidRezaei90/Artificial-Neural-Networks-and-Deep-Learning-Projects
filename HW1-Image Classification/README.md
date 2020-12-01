@@ -43,9 +43,9 @@ Thus, the classification is performed on 3 different classes. Being a classifica
 * File Format: JPG
 * Number of classes: 3
 * Classes:
-     0: "NO PERSON in the image is wearing a mask"
-     1: "ALL THE PEOPLE in the image are wearing a mask"
-     2: "SOMEONE in the image is not wearing a mask"
+    * 0: "NO PERSON in the image is wearing a mask"
+   *  1: "ALL THE PEOPLE in the image are wearing a mask"
+   *  2: "SOMEONE in the image is not wearing a mask"
 
 
 
