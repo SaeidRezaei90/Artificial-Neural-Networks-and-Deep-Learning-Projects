@@ -97,7 +97,7 @@ The simple model is as follows:
 We can tune the hyperparameters using a grid of parameters. This was discussed before we put a section for it just to stress on the importance of this method on choosing the best_model. You can check [this File](Source-Code/HyperparamterTuning.ipynb) for that. 
 The Hyperparameter Tuining is shown as follows.
  <p float="left">
-  <img src="Images/cnn2.png" width="600" />
+  <img src="Images/cnn2.png" width="700" />
 </p>
 
 Even with this, the performance is not that good. So, because our input data is small we can resort to transfer learning. There are some other ways to improve the accuracy like changing the parameters, adding the depth of convolutional segment, adding more convolutonal layer, using `BatchNormalization()` and `GlobalAveragePooling2D()` functions and so on, but here we decide to use [Transfer Learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/)
