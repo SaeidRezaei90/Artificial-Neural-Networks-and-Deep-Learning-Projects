@@ -92,15 +92,33 @@ The simple model is as follows:
  <p float="left">
   <img src="Images/cnn1.png" width="500" />
 </p>
- This model gives us a 0.67 accuracy on validation set which is not good. So we use Hyperparameter Tuning in order to improve accuracy. 
+ This model gives us a 0.67 accuracy on validation set which is not acceptable. So we use Hyperparameter Tuning in order to improve accuracy. 
  
 We can tune the hyperparameters using a grid of parameters. This was discussed before we put a section for it just to stress on the importance of this method on choosing the best_model. You can check [this File](Source-Code/HyperparamterTuning.ipynb) for that. 
+The Hyperparameter Tuining is shown as follows.
+ <p float="left">
+  <img src="Images/cnn2.png" width="500" />
+</p>
 
+Even with this, the performance is not that good. So, because our input data is small we can resort to transfer learning. There are some other ways to improve the accuracy like changing the parameters, adding the depth of convolutional segment, adding more convolutonal layer, using `BatchNormalization()` and `GlobalAveragePooling2D()` functions and so on, but here we decide to use [Transfer Learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/)
+Two ways for transfer learning:
+- We first incorporate a base model on a set of predicted weights to it, and then all layers (or some of them) are freezed. After that we create a new model on top of the output of the previous one and train the new model on the new dataset. 
+- Alternatively, instead of freezing the layers of the base model we can run a new dataset through it record the output of one (or several) layers from base model (feature extration). Then we can use the output as an input for the new and smaller dataset.
 
+The best result obtained is using both approaches and the latter worked better than the former for us, with scores 0.951 and 0.788 respectively. 
 
+### Creating the base Model
+Thanks to the keras.applications, there are some pre-trained transfer learning models for image classification that help us to solve the problem. VGG16 was the first based model which we used it, this model is one of the most popular pre-trained models (but not efficient) for image classification but unfortunately the results were not as good as we expected. So after studying some articles we finally decided to use the [DenseNet121](https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a). DenseNet is a convolutional neural network where each layer is connected to all other layers that are deeper in the network, that is, the first layer is connected to the 2nd, 3rd, 4th and so on, the second layer is connected to the 3rd, 4th, 5th and so on.
+ <p float="left">
+  <img src="Images/cnn3.png" width="500" />
+</p>
 
+________________________
+## Training
 
-
+To train this model, the Adam Optimizer is used to minimize the loss function with initial learning rate 1e-4, but thanks to the `ReduceLROnPlateau` it can be improved during the training phase with patience=10. We also used `EarlyStopping` to prevent overfitting, `ModelcheckPoint` to save the weights, and `TensorBoard` to visualize the accuracy and lost results.
+In addition, we will use the model.fit () function to train our model. Here the most important parameter that must be carefully selected is number of epochs. For our project this parameter is up to 25.
+________________________
 
 
 
