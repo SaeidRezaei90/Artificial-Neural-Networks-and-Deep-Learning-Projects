@@ -67,6 +67,15 @@ train_gt.json: Labels for images are provided in the *train_gt.json" file.
 
 ________________________
 
+## DATA PREPARATION:
+________________________
+In this part we should make sure that the training, validation, and the test dataset are set-up in a manner that is usable for the task as well as boosting the overall performance of the deep learning model. 
+We loaded all data in as a Pandas data-frame and thanks to the data_gen.flow_from_dataframe() of Keras we were easily able to make the desired data generator which links the json file to the corresponding folder. 
+Some Important points:
+•	Input data should be augmented using ImageDataGenerator. By doing this we have more training version of train_data making our prediction more robust to the new test data.
+•	 Validation and test data are not augmented.
+•	Shuffling the data at the beginning is a crucial task to be done. 
+•	setting a specific SEED for the training to be reproducible. 
 
 
 
