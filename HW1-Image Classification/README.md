@@ -97,7 +97,7 @@ The simple model is as follows:
 We can tune the hyperparameters using a grid of parameters. This was discussed before we put a section for it just to stress on the importance of this method on choosing the best_model. You can check [this File](Source-Code/HyperparamterTuning.ipynb) for that. 
 The Hyperparameter Tuining is shown as follows.
  <p float="left">
-  <img src="Images/cnn2.png" width="500" />
+  <img src="Images/cnn2.png" width="600" />
 </p>
 
 Even with this, the performance is not that good. So, because our input data is small we can resort to transfer learning. There are some other ways to improve the accuracy like changing the parameters, adding the depth of convolutional segment, adding more convolutonal layer, using `BatchNormalization()` and `GlobalAveragePooling2D()` functions and so on, but here we decide to use [Transfer Learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/)
@@ -110,7 +110,7 @@ The best result obtained is using both approaches and the latter worked better t
 ### Creating the base Model
 Thanks to the keras.applications, there are some pre-trained transfer learning models for image classification that help us to solve the problem. VGG16 was the first based model which we used it, this model is one of the most popular pre-trained models (but not efficient) for image classification but unfortunately the results were not as good as we expected. So after studying some articles we finally decided to use the [DenseNet121](https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a). DenseNet is a convolutional neural network where each layer is connected to all other layers that are deeper in the network, that is, the first layer is connected to the 2nd, 3rd, 4th and so on, the second layer is connected to the 3rd, 4th, 5th and so on.
  <p float="left">
-  <img src="Images/cnn3.png" width="500" />
+  <img src="Images/cnn3.png" width="600" />
 </p>
 
 ________________________
