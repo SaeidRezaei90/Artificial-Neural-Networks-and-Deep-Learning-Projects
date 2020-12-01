@@ -5,15 +5,14 @@ ________________________
 - 1st semester of 2st year
 - [Politecnico di Milano](https://www.polimi.it/)
 ________________________
-#### Professors:
+#### Professors
 * Matteo Matteucci
 * [Giacomo Boracchi](https://boracchi.faculty.polimi.it/teaching/AN2DL.htm)
 ________________________
-
-#### Teaching Assistance:
+#### Teaching Assistance
 * Francesco Lattari
 ________________________
-#### Collaborators:
+#### Collaborators
 * Saeid Rezaei
 * Abdolvakil Fazli
 * Tina Emami
