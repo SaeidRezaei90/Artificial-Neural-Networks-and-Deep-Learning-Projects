@@ -110,7 +110,7 @@ The best result obtained is using both approaches and the latter worked better t
 ### Creating the base Model
 Thanks to the keras.applications, there are some pre-trained transfer learning models for image classification that help us to solve the problem. VGG16 was the first based model which we used it, this model is one of the most popular pre-trained models (but not efficient) for image classification but unfortunately the results were not as good as we expected. So after studying some articles we finally decided to use the [DenseNet121](https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a). DenseNet is a convolutional neural network where each layer is connected to all other layers that are deeper in the network, that is, the first layer is connected to the 2nd, 3rd, 4th and so on, the second layer is connected to the 3rd, 4th, 5th and so on.
  <p float="left">
-  <img src="Images/cnn3.png" width="600" height="600" />
+  <img src="Images/cnn3.png" width="600" height="500" />
 </p>
 
 ________________________
