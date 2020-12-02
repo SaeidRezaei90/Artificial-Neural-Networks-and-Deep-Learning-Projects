@@ -1,5 +1,5 @@
 
-### This Repository contains the homeworks projects for the course [Artificial Neural Networks and Deep Learning](http://chrome.ws.dei.polimi.it/index.php?title=Artificial_Neural_Networks_and_Deep_Learning)
+### This Repository contains the homework projects for the course [Artificial Neural Networks and Deep Learning](http://chrome.ws.dei.polimi.it/index.php?title=Artificial_Neural_Networks_and_Deep_Learning)
 ________________________
 - Academic year 2020-2021
 - 1st semester of 2st year
