@@ -112,7 +112,6 @@ Thanks to the keras.applications, there are some pre-trained transfer learning m
  <p float="left">
   <img src="Images/cnn3.png" width="600" height="500" />
 </p>
-
 ________________________
 ## Training
 
