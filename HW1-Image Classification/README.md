@@ -113,6 +113,7 @@ Thanks to the keras.applications, there are some pre-trained transfer learning m
   <img src="Images/cnn3.png" width="600" height="500" />
 </p>
 ________________________
+
 ## Training
 
 To train this model, the Adam Optimizer is used to minimize the loss function with initial learning rate 1e-4, but thanks to the `ReduceLROnPlateau` it can be improved during the training phase with patience=10. We also used `EarlyStopping` to prevent overfitting, `ModelcheckPoint` to save the weights, and `TensorBoard` to visualize the accuracy and lost results.
