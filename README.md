@@ -6,11 +6,11 @@ ________________________
 - [Politecnico di Milano](https://www.polimi.it/)
 ________________________
 #### Professors
-* Matteo Matteucci
+* [Matteo Matteucci](https://www.deib.polimi.it/eng/people/details/267262)
 * [Giacomo Boracchi](https://boracchi.faculty.polimi.it/teaching/AN2DL.htm)
 ________________________
 #### Teaching Assistance
-* Francesco Lattari
+* [Francesco Lattari](https://www.deib.polimi.it/eng/people/details/846174)
 ________________________
 #### Collaborators
 * Saeid Rezaei
