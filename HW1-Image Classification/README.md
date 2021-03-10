@@ -11,7 +11,7 @@ ________________________
  -
  - Saeid Rezaei
  - Abdolvakil Fazli
- - Tina Emami
+
 
 ________________________
 ## Problem description
