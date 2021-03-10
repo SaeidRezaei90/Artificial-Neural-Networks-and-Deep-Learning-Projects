@@ -15,4 +15,3 @@ ________________________
 #### Collaborators
 * Saeid Rezaei
 * Abdolvakil Fazli
-* Tina Emami
