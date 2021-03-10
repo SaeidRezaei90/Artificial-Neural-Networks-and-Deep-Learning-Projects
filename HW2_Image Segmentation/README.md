@@ -22,6 +22,6 @@ ________________________
 ### Dataset Details
 Basically, you are given some images of different classes, and different kinds, and the task is to write a segmentation algorithm such that a robot can perform accurate separation from weed/crop classification. The dataset is composed of images captured by different sensors in different moments and are about two kinds of crops: haricot and maize. Images in the dataset are divided into different folders based on the team that acquired the image, i.e., Bipbip, Pead, Roseau, Weedelec. For each team, we have two different sub-folders named as the type of crop present in the images, i.e., Haricot and Mais. Finally, for each crop, we provide the captured RGB images, in the Images folder, and the corresponding ground-truth segmentations, in the Masks folder. A aptured RGB image and its corresponding ground-truth is shown as following:
  <p float="left">
-  <img src="Images/10362.jpg" width="500" />
+  <img src="Bipbip_haricot_im_00321.jpg" width="500" />
   <img src="Images/10378.jpg" width=500 /> 
 </p>
