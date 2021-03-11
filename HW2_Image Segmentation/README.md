@@ -132,3 +132,16 @@ A [U-Net architecture](https://en.wikipedia.org/wiki/U-Net#:~:text=The%20U-Net%2
 In this assignment we used different approaches: vgg-unet, Resnet34, and also we fine tuned the vgg-unet to be able to precisely answer to question of what as the dataset is very small but there were always the fear of falling into the trap of overfitting. They are easy to be fined in the notebook attached to this report
 But the best approach was a simple use of U-Net-like approach given by Keras documentation which gave us a maximum mean IoU of 0.47. 
 
+________________________
+
+## Evaluation
+Submissions are evaluated on the mean Intersection over Union (IoU) obtained on the two classes, crop and weed. IoU is typically used in segmentation tasks and it essentially quantifies the percentage of overlap between predicted and target segmentations (see image below).
+ <p float="left">
+  <img src="IoU.png" width="500" />
+</p>
+IoU is computed for each target class (crop and weed) separately, by considering prediction and ground truth as binary masks. Then, the final IoU is computed by averaging the two.  Thus, we have the following formulation:
+```
+IoU(crop) = TP(crop) / (TP(crop) + FP(crop) + FN(crop))
+IoU(weed) = TP(weed) / (TP(weed) + FP(weed) + FN(weed))
+IoU = (IoU(crop) + IoU(weed)) / 2
+```
