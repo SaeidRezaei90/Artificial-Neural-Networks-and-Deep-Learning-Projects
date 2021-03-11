@@ -137,9 +137,10 @@ ________________________
 ## Evaluation
 Submissions are evaluated on the mean Intersection over Union (IoU) obtained on the two classes, crop and weed. IoU is typically used in segmentation tasks and it essentially quantifies the percentage of overlap between predicted and target segmentations (see image below).
  <p float="left">
-  <img src="IoU.png" width="500" />
+  <img src="IoU.PNG" width="500" />
 </p>
 IoU is computed for each target class (crop and weed) separately, by considering prediction and ground truth as binary masks. Then, the final IoU is computed by averaging the two.  Thus, we have the following formulation:
+
 ```
 IoU(crop) = TP(crop) / (TP(crop) + FP(crop) + FN(crop))
 IoU(weed) = TP(weed) / (TP(weed) + FP(weed) + FN(weed))
