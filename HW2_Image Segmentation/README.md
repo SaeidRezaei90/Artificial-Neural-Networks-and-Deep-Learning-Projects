@@ -125,6 +125,10 @@ The difference and challenging problem here, especially in visualization and pre
 ________________________
 
 ## ARCHITECTURES
+A U-Net architecture is used to combine low-level feature maps with higher-level ones, which enables precise pixel-level localization.
+ <p float="left">
+  <img src="Unet.png" width="500" />
+</p>
 In this assignment we used different approaches: vgg-unet, Resnet34, and also we fine tuned the vgg-unet to be able to precisely answer to question of what as the dataset is very small but there were always the fear of falling into the trap of overfitting. They are easy to be fined in the notebook attached to this report
 But the best approach was a simple use of U-Net-like approach given by Keras documentation which gave us a maximum mean IoU of 0.47. 
 
