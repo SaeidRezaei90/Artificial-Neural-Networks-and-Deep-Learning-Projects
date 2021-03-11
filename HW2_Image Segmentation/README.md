@@ -27,9 +27,11 @@ Basically, we are given some images of different classes, and different kinds, a
 </p>
 
 ### Dataset Structure
-Two folders:
+The dataset zipped file contains 2 folders containing training and test images. The structure of the zipped file is as following: 
+
 ```
 - training/
+
     -Bipbib
        -Haricot
            -Images
@@ -80,6 +82,7 @@ Two folders:
       - img1, img2, ... , imgN
     
 - test_Dev/
+
     -Bipbib
        -Haricot
            -Images
@@ -113,3 +116,9 @@ Two folders:
                - img1, img2, ... , imgN
 
 ```
+________________________
+
+## DATA PREPARATION
+As a supervised learning task, we are also given with the mask images for those training images. This help us to adopt a deep learning approach, splitting the target and input, thanks to the customdataset() function letting us to return a tuple of augmented and preprocessed images and masks and model.fit() in Keras which eases the separation between target and the input for every image.
+The customdataset() function needs a lot of things to be cared of one of which is going through different directories to get the right images and shuffling them through augmentation.
+The difference and challenging problem here, especially in visualization and preprocessing is that unlike image classification, here the targets are images as well. This is also challenging when it comes to the deep neural network approach which leads us to apply Encoder-Decoder structure. While the former takes care of capturing the context (answering to the “what?”) and the latter is going to precise localization (answering to “where?”).  In U-net they are respectively called contraction and expansion. 
