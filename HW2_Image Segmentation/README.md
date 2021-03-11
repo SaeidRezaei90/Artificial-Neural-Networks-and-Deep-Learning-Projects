@@ -17,7 +17,7 @@ ________________________
 In this assignment the task of multiclass semantic segmentation for Bipbip dataset drawn from the first round of [ACRE Cascade Competition](https://competitions.codalab.org/competitions/27176) is being studied. ACRE is the Agri-food Competition for Robot Evaluation, part of the METRICS project funded by the European Union’s Horizon 2020 research and innovation program under grant agreement No 871252. Autonomous robots compete to demonstrate their ability to perform agricultural tasks (such as removing weeds or surveying crops down to individual-plant resolution).  The same network, maybe with a little bit of different parameters or fine tunings, can be used for other type of the datasets (PEAD, ROSEAU, WeedElec) in the competition.
 
 ________________________
-## Data Description
+## Data description
 
 ### Dataset Details
 Basically, we are given some images of different classes, and different kinds, and the task is to write a segmentation algorithm such that a robot can perform accurate separation from weed/crop classification. The dataset is composed of images captured by different sensors in different moments and are about two kinds of crops: haricot and maize. Images in the dataset are divided into different folders based on the team that acquired the image, i.e., Bipbip, Pead, Roseau, Weedelec. For each team, we have two different sub-folders named as the type of crop present in the images, i.e., Haricot and Mais. Finally, for each crop, we provide the captured RGB images, in the Images folder, and the corresponding ground-truth segmentations, in the Masks folder. A aptured RGB image and its corresponding ground-truth is shown as following:
@@ -26,7 +26,7 @@ Basically, we are given some images of different classes, and different kinds, a
   <img src="Bipbip_haricot_im_00321.png" width=500 /> 
 </p>
 
-### Dataset Structure
+### Dataset structure
 The dataset zipped file contains 2 folders containing training and test images. The structure of the zipped file is as following: 
 
 ```
@@ -117,14 +117,14 @@ The dataset zipped file contains 2 folders containing training and test images. 
 ```
 ________________________
 
-## DATA PREPARATION
+## Data preparation
 As a supervised learning task, we are also given with the mask images for those training images. This help us to adopt a deep learning approach, splitting the target and input, thanks to the customdataset() function letting us to return a tuple of augmented and preprocessed images and masks and model.fit() in Keras which eases the separation between target and the input for every image.
 The customdataset() function needs a lot of things to be cared of one of which is going through different directories to get the right images and shuffling them through augmentation.
 The difference and challenging problem here, especially in visualization and preprocessing is that unlike image classification, here the targets are images as well. This is also challenging when it comes to the deep neural network approach which leads us to apply Encoder-Decoder structure. While the former takes care of capturing the context (answering to the “what?”) and the latter is going to precise localization (answering to “where?”).  In U-net they are respectively called contraction and expansion. 
 
 ________________________
 
-## ARCHITECTURES
+## Architecture
 A [U-Net architecture](https://en.wikipedia.org/wiki/U-Net#:~:text=The%20U-Net%20architecture%20stems%20from%20the%20so-called%20%E2%80%9Cfully,these%20layers%20increase%20the%20resolution%20of%20the%20output.) "fully convolutional network" is used to combine low-level feature maps with higher-level ones, which enables precise pixel-level localization.
  <p float="left">
   <img src="Unet.png" width="500" />
