@@ -125,7 +125,7 @@ The difference and challenging problem here, especially in visualization and pre
 ________________________
 
 ## ARCHITECTURES
-A U-Net architecture is used to combine low-level feature maps with higher-level ones, which enables precise pixel-level localization.
+A [U-Net architecture](https://en.wikipedia.org/wiki/U-Net#:~:text=The%20U-Net%20architecture%20stems%20from%20the%20so-called%20%E2%80%9Cfully,these%20layers%20increase%20the%20resolution%20of%20the%20output.) "fully convolutional network" is used to combine low-level feature maps with higher-level ones, which enables precise pixel-level localization.
  <p float="left">
   <img src="Unet.png" width="500" />
 </p>
