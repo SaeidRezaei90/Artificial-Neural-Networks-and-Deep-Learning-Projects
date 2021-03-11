@@ -41,6 +41,7 @@ Two folders:
                - img1, img2, ... , imgN
            -Masks
                - img1, img2, ... , imgN
+               
     -Pead
        -Haricot
            -Images
@@ -52,6 +53,7 @@ Two folders:
                - img1, img2, ... , imgN
            -Masks
                - img1, img2, ... , imgN
+               
     -Roseau
        -Haricot
            -Images
@@ -63,6 +65,7 @@ Two folders:
                - img1, img2, ... , imgN
            -Masks
                - img1, img2, ... , imgN
+               
     -Weedelec
        -Haricot
            -Images
@@ -84,6 +87,7 @@ Two folders:
        -Mais
            -Images
                - img1, img2, ... , imgN
+               
     -Pead
        -Haricot
            -Images
@@ -91,6 +95,7 @@ Two folders:
        -Mais
            -Images
                - img1, img2, ... , imgN
+               
     -Roseau
        -Haricot
            -Images
@@ -98,6 +103,7 @@ Two folders:
        -Mais
            -Images
                - img1, img2, ... , imgN
+               
     -Weedelec
        -Haricot
            -Images
